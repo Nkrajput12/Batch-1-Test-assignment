@@ -142,6 +142,12 @@ document.addEventListener('DOMContentLoaded', async () => {
             const sortedData = sortData(filteredData, 'hardSolved', hardSolvedDirection, true);
             renderLeaderboard(sortedData);
         });
+  
+       $(document).ready(function(){
+    $("#search").autocomplete({
+        
+       });
+    });
 
     } catch (error) {
         console.error('Error fetching data:', error);
